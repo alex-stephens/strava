@@ -3,12 +3,16 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '10.0'
 
-target 'AwesomeProject' do
+target 'StravaDashboard' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
 
-  target 'AwesomeProjectTests' do
+
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  target 'StravaDashboardTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -23,10 +27,10 @@ target 'AwesomeProject' do
   end
 end
 
-target 'AwesomeProject-tvOS' do
-  # Pods for AwesomeProject-tvOS
+target 'StravaDashboard-tvOS' do
+  # Pods for StravaDashboard-tvOS
 
-  target 'AwesomeProject-tvOSTests' do
+  target 'StravaDashboard-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

@@ -1,0 +1,6 @@
+module Pods_StravaDashboard {
+  umbrella header "Pods-StravaDashboard-umbrella.h"
+
+  export *
+  module * { export * }
+}
